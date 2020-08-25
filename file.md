@@ -1,33 +1,37 @@
-Program for Fibonacci numbers
+# Program for Fibonacci numbers
 
 
 The Fibonacci numbers are the numbers in the following integer sequence.
+```
 
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
+```
 
 In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation
-
+```
     Fn = Fn-1 + Fn-2
+```
 with seed values
-
+```
    F0 = 0 and F1 = 1.
-
+```
 FOR nth Fibonacci -
 
 Given a number n, print n-th Fibonacci Number.
 Examples:
-
+```
 Input  : n = 2
 Output : 1
 
 Input  : n = 9
 Output : 34
+```
 
-Method 1 ( Use recursion ) 
+## Method 1 ( Use recursion ) 
 A simple method that is a direct recursive implementation mathematical recurrence relation given above.
 
-//Fibonacci Series using Recursion in java
-
+### Fibonacci Series using Recursion in java
+```
 class fibonacci 
 { 
 
@@ -55,9 +59,12 @@ class fibonacci
 
     } 
 }
+```
 
-Output
+## Output:
+```
 34
+```
 Time Complexity: T(n) = T(n-1) + T(n-2) which is exponential.
 We can observe that this implementation does a lot of repeated work (see the following recursion tree). So this is a bad implementation for nth Fibonacci number.
 
@@ -71,11 +78,11 @@ We can observe that this implementation does a lot of repeated work (see the fol
   /     \
 fib(1) fib(0)
 
-Method 2 ( Use Dynamic Programming )
+## Method 2 ( Use Dynamic Programming )
 We can avoid the repeated work done is method 1 by storing the Fibonacci numbers calculated so far.
 
-//In java
-
+### In java
+```
 class fibonacci 
 { 
 
@@ -129,14 +136,17 @@ class fibonacci
 
     } 
 }
-
-Output:
+```
+## Output:
+```
 34
+```
 
 Fibonacci Series up to n terms-
 
-// In C
+## In C
 
+```
 #include <stdio.h>
 int main() {
     int i, n, t1 = 0, t2 = 1, nextTerm;
@@ -153,3 +163,4 @@ int main() {
 
     return 0;
 }
+```
