@@ -67,7 +67,7 @@ class fibonacci
 ```
 Time Complexity: T(n) = T(n-1) + T(n-2) which is exponential.
 We can observe that this implementation does a lot of repeated work (see the following recursion tree). So this is a bad implementation for nth Fibonacci number.
-
+```
                        fib(5)   
                      /                \
                fib(4)                fib(3)   
@@ -77,7 +77,7 @@ We can observe that this implementation does a lot of repeated work (see the fol
   fib(2)   fib(1)  fib(1) fib(0) fib(1) fib(0)
   /     \
 fib(1) fib(0)
-
+```
 ## Method 2 ( Use Dynamic Programming )
 We can avoid the repeated work done is method 1 by storing the Fibonacci numbers calculated so far.
 
